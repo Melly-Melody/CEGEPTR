@@ -24,7 +24,7 @@ begin
 		case upper(v_Professeurs.Nom_Departement)
 			when 'INFORMATIQUE' then 
 				v_Professeurs.salaire:=v_Professeurs.salaire+(v_Professeurs.Salaire*0.045);
-			when 'MATHÉMATIQUES' then
+			when 'MATHÃ‰MATIQUES' then
 				v_professeurs.salaire:=v_Professeurs.salaire+(v_Professeurs.Salaire*0.05);
 			when 'PHARMACIE' then
 				v_professeurs.salaire:=v_Professeurs.salaire+(v_Professeurs.Salaire*0.03);
@@ -53,7 +53,7 @@ begin
 	case upper(v_Professeurs.Nom_Departement)
 	  when 'INFORMATIQUE' then 
 		v_Professeurs.salaire:=v_Professeurs.salaire+(v_Professeurs.Salaire*0.045);
-	  when 'MATHÉMATIQUES' then
+	  when 'MATHÃ‰MATIQUES' then
 		v_professeurs.salaire:=v_Professeurs.salaire+(v_Professeurs.Salaire*0.05);
 	  when 'PHARMACIE' then
 		v_professeurs.salaire:=v_Professeurs.salaire+(v_Professeurs.Salaire*0.03);
@@ -122,7 +122,7 @@ begin
 	loop
 		fetch c_Infos into v_Infos;
 		exit when c_infos%NOTFOUND;
-		if upper(v_Infos.Ville)='TROIS_RIVIÈRES' then
+		if upper(v_Infos.Ville)='TROIS_RIVIÃˆRES' then
 			v_Infos.Code_Postal:= Modifier_Codes(v_Infos.NAS);
 		end if;
 	end loop;
